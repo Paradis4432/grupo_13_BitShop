@@ -28,3 +28,4 @@ Como paleta de colores usaremos los siguientes:
 #E54F28
 #2E1A1A
 
+FrameWork: https://www.figma.com/file/pu1uRmOlQX2jwXoHScVIPP/Untitled?node-id=1%3A30
