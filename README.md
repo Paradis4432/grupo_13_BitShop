@@ -1,4 +1,4 @@
-# paginaWeb
+# grupo_13_BitShop
 
 Crearemos una página web para la venta de PCs y perfericos.
 Se ofrecerán distintas opciones para que el cliente pueda armar la PC segun sus necesidades.
