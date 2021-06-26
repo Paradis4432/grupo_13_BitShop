@@ -2,14 +2,17 @@
 
 * {
     box-sizing: border-box;
+    
 }
+
+
 
 body {
     background-color: #ECE5BA;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* align-items: center; */
+    font-family: 'Raleway', sans-serif;
     
 }
 /* .seccion-producto {
@@ -23,53 +26,106 @@ body {
 
 .contenedor-producto {
     background-color: #E54F28;
-    width: 50vw;
-    padding: 35px;
+    width: 95vw;
+    padding: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 100px;
-    max-width: 500px;
-    min-height: 600px;
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     
 
 }
 
+
 .img-producto {
-    width: 80%;
+    width: 95%;
     padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    max-height: 400px;
 }
 
 .titulo-producto {
     padding: 15px;
-    width: 80%;
+    width: 95%;
     font-weight: 600;
     text-transform: capitalize;
+    
 }
 
 .descripcion-producto {
     padding: 15px;
-    width: 80%;
+    width: 95%;
     border-top: solid 1px ;
+    
 }
 
 .botones-producto {
     padding: 15px;
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.boton-agregar {
+.boton {
     background-color: rgba(42, 2, 219, 0.7);
     padding: 6px;
     border-radius: 5px;
     color: cornsilk;
+    
+    margin: 10px;
 }
 
-.boton-comprar {
-    background-color: rgba(42, 2, 219, 0.7);
-    padding: 6px;
-    border-radius: 5px;
-    color: cornsilk;
+
+
+
+@media (min-width: 1000px) {
+
+        
+    .contenedor-producto {
+        background-color: #E54F28;
+        width: 50vw;
+        padding: 35px; 
+        margin: 100px;
+        max-width: 500px;
+        min-height: 600px;
+    
+    }
+    
+    
+    .img-producto {
+        max-width: none;
+        max-height: none;
+
+        width: 80%;
+        padding: 15px;
+        
+    }
+    
+    .titulo-producto {
+        
+        width: 80%;
+    
+    }
+    
+    .descripcion-producto {
+        
+        width: 80%;
+        
+    }
+    
+    .botones-producto {
+        
+        width: 80%;
+        
+    }
+    
+    .boton {
+        
+        margin: 0px;
+    }
+    
+    
+    
 }
