@@ -33,6 +33,7 @@ header h1 {
     margin: 10px;
     position: relative;
     
+    
 }
 
 .carrito-titulos {
@@ -147,5 +148,13 @@ input.contenido {
 
 
 
+@media (min-width:680px) {
+    .carrito-producto .contenido {
+        width: 20%;
+        
+    
+    }
+}
 
-
+/* @media (min-width:850px)
+@media (min-width:1007px)  */
