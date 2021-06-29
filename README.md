@@ -29,4 +29,5 @@ Como paleta de colores usaremos los siguientes:
 #2E1A1A
 
 FrameWork: https://www.figma.com/file/pu1uRmOlQX2jwXoHScVIPP/Untitled?node-id=1%3A30
+
 Trello: https://trello.com/b/UlK79dZ5/grupo-13-bitshop
