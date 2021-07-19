@@ -7,24 +7,24 @@
 		<meta charset='UTF-8'>
 		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-		<title>BitShop</title>
-		<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
-		<link rel='stylesheet' type='text/css' href='css/index.css'>
+		<title> <%= title %> </title>
+		<link rel='stylesheet' type ='text/css' href='css/home.css'>
+		<link rel="stylesheet" type ='text/css' href="css/footer.css">
+		<link rel="stylesheet" type ='text/css' href="css/header.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-		<!-- <link rel="stylesheet" href="css/normalize.css">
-    	<link rel="stylesheet" href="css/reset.css"> -->
-
-		
+		<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
 		
 		<div class="contenedor">
 
-			<header>
-				<!-- 
+			<%- include("./partials/header") %>
+
+			<!-- <header>
+				// 
 				<div class="valores">
 					<ul>
 						<li class="DO">Dólar Oficial</li>
@@ -32,35 +32,40 @@
 						<li class="BTC">Bitcoin</li>
 					</ul>
 				</div>
-				-->
+				// 
 				<div class="logo">
 					<a href="#"><img class="imagen-logo" src="images/Logo png.png" alt=""></a>
 				</div>
 
 				<div class="user-menu">
 					<ul>
-						<li>
-							<a href="/login" class="iniciar-sesion" target="_blank"><span>Iniciar Sesión</span></a>
+						<li class="one">
+							<a href="views/login.ejs" class="iniciar-sesion" target="_blank">
+								<span>Iniciar Sesión</span>
+							</a>
 						</li>
-						<li>
-							<a href="/register" class="registrarse" target="_blank"><span>Registrarse</span></a>
+						<li class="two">
+							<a href="views/register.ejs" class="registrarse" target="_blank">
+								<span>Registrarse</span>
+							</a>
 						</li>
 					</ul>
 					
 				</div>
-			</header>
+
+			</header> -->
 
 		<section class="menu">
 			<div class="i1">
-				<a href="/productList"><img src="images/PC Components.png" alt=""></a>
+				<a href="/product"><img src="images/PC Components.png" alt=""></a>
 				<div class="ip">
 					<img src="images/Chip.png" alt="">
 					<h2>Componentes</h2>
-					<p>Comprá componentes o te mato</p>
+					<!-- <p>Comprá componentes o te mato</p> -->
 				</div>
 			</div>
 			<div class="i2">
-				<a href="/productDetail"><img src="images/PC Keyboard.png" alt=""></a>
+				<a href="/product/id"><img src="images/PC Keyboard.png" alt=""></a>
 				<div class="ip">
 					<img src="images/Teclado.png" alt="">
 					<h2>Periféricos</h2>
@@ -68,7 +73,7 @@
 				</div>
 			</div>
 			<div class="i3">
-				<a href="/productCart"><img src="images/Gatok.png" alt=""></a>
+				<a href="/product/cart"><img src="images/Gatok.png" alt=""></a>
 				<div class="ip">
 					<img src="images/Carrito.png" alt="">
 					<h2>Carritok</h2>
@@ -89,7 +94,9 @@
 				
 			</aside>
 
-			<footer>
+			<%- include("./partials/footer") %>
+
+			<!-- <footer>
 			
 
 				<div class="links">
@@ -105,7 +112,7 @@
 						<li><a href="#">Componentes</a></li>
 						<li><a href="#">Periféricos</a></li>
 						<li><a href="#">PC Custom</a></li>
-						<li><a href="/productCart">Carrito</a></li>
+						<li><a href="#">Carrito</a></li>
 					</ul>
 				</div>
 
@@ -116,7 +123,7 @@
 						<li><a href="#">Instagram</a></li>
 					</ul>
 				</div>
-			</footer>
+			</footer> -->
 		</div>
 		
 

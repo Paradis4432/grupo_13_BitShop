@@ -7,11 +7,12 @@
 
 
 
-body {
-    background-color: #ECE5BA;
+.contenedor {
+    background-color: rgb(247, 243, 233);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     font-family: 'Raleway', sans-serif;
     
 }
@@ -25,12 +26,13 @@ body {
 } */
 
 .contenedor-producto {
-    background-color: #E54F28;
+    background-color: #e9982d;
     width: 95vw;
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     
@@ -39,7 +41,7 @@ body {
 
 
 .img-producto {
-    width: 95%;
+    width: 100%;
     padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     max-width: 400px;
@@ -48,7 +50,7 @@ body {
 
 .titulo-producto {
     padding: 15px;
-    width: 95%;
+    width: 100%;
     font-weight: 600;
     text-transform: capitalize;
     
@@ -56,9 +58,17 @@ body {
 
 .descripcion-producto {
     padding: 15px;
-    width: 95%;
+    width: 100%;
     border-top: solid 1px ;
     
+}
+
+.precio {
+    padding: 15px;
+    width: 100%;
+    border-top: solid 1px ;
+    text-align: center;
+    font-size: 27px;
 }
 
 .botones-producto {
@@ -80,44 +90,61 @@ body {
 
 
 
-@media (min-width: 1000px) {
+@media (min-width: 500px) {
 
         
     .contenedor-producto {
-        background-color: #E54F28;
-        width: 50vw;
-        padding: 35px; 
-        margin: 100px;
-        max-width: 500px;
-        min-height: 600px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100vw;
+        /* padding: 35px;  */
+        /* margin: 100px; */
+        max-width: 1000px;
+        min-height: 1100px;
     
     }
     
     
     .img-producto {
-        max-width: none;
-        max-height: none;
-
-        width: 80%;
-        padding: 15px;
-        
+        max-width: 400px;
+        max-height: 400px;
+        width: 50%;
+        padding: 5px;
+        margin: 0px;
+        /* border: solid 1px red; */
     }
     
     .titulo-producto {
         
-        width: 80%;
-    
+        width: 50%;
+        padding: 5px;
+        margin: 0px;
+        /* border: solid 1px red; */
     }
     
     .descripcion-producto {
         
-        width: 80%;
-        
+        width: 100%;
+        padding: 5px;
+        margin: 0px;
+        /* border: solid 1px red; */
+    }
+
+    .precio {
+        padding: 5px;
+        width: 100%;
+        border-top: solid 1px ;
+        text-align: center;
+        font-size: 27px;
+        margin: 0px;
+        /* border: solid 1px red; */
     }
     
     .botones-producto {
         
-        width: 80%;
+        width: 100%;
+        max-width: 400px;
+        /* border: solid 1px red; */
         
     }
     

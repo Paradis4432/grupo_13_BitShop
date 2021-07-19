@@ -4,8 +4,8 @@
     
 }
 
-body {
-    background-color: #ECE5BA;
+.contenedor {
+    background-color: rgb(247, 243, 233);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -15,15 +15,17 @@ body {
 
 
 .contenedor-producto {
-    background-color: #E54F28;
-    padding: 35px;
+    background-color: #e9982d;
+    padding: 5px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
     margin: 15px;
     max-width: 300px;
     /* max-height: 450px; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
     
     
 
@@ -36,16 +38,18 @@ body {
 
 
 .img-producto {
-    width: 95%;
+    width: 100%;
     padding: 15px;
+    
 }
 
 .titulo-producto {
     padding: 15px;
-    width: 95%;
+    width: 100%;
     font-weight: 600;
     text-transform: capitalize;
     font-family: 'Raleway', sans-serif;
+    
 }
 
 .descripcion-producto {
@@ -53,13 +57,16 @@ body {
     width: 95%;
     border-top: solid 1px ;
     font-family: 'Raleway', sans-serif;
+    display: none;
+
 }
 
 .botones-producto {
     padding: 15px;
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between; */
+    
     
 }
 
@@ -71,4 +78,43 @@ body {
     font-family: 'Raleway', sans-serif;
     margin: 10px;
     cursor: pointer;
+}
+
+
+
+
+@media (min-width:650px) {
+    .contenedor-producto {
+        padding: 5px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        max-width: 1000px;
+        /* max-height: 250px; */
+    }
+    .img-producto {
+        width: 25%;
+        padding: 5px;
+        max-height: 200px;
+        max-width: 200px;
+        margin: 5px;
+    }
+    
+    .titulo-producto {
+        /* padding: 15px; */
+        width: 25%;
+        /* font-weight: 600; */
+        
+    }
+    
+
+    .botones-producto {
+        padding: 15px;
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
 }
