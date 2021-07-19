@@ -59,6 +59,15 @@ header{
     text-decoration: none;
 }
 
+@media (min-width:680px) {
+    header .menu{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
 @media (min-width:1007px) {
     /* Header */
 
