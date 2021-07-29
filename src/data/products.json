@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Product 1",
+    "description": "",
+    "price": "",
+    "brand": 1,
+    "color": [2,3],
+    "image": "image-1623974496723.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Product 2",
+    "description": "",
+    "price": "",
+    "brand": 1,
+    "color": [1,3],
+    "image": "image-1623972326125.jpg"
+  }
+]

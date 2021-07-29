@@ -40,6 +40,12 @@
                 <button class="boton">Agregar al carrito</button>
                 <button class="boton">Comprar ahora</button>
             </div>
+            <form action="/product/delete?_method=DELETE" method="POST">
+                <input type="hidden" name="id" value="<%= product.id %>">
+                <button type="submit" >
+                    <i class="fas fa-trash"></i>
+                </button>
+            </form>
         </article>
         
     </section>    
