@@ -22,11 +22,11 @@ router.get("/", product.index);
 router.get("/create", product.create);
 router.get("/edit", product.edit);
 router.get("/:id", product.detail);
-router.get("/edit/:id", product.show);
+router.get("/edit/:id", product.detail);
 router.get("/cart", product.cart);
 
 router.put("/update/:id", product.update);
-router.post("/save",[upload.single("image")], product.save);
+router.post("/save",/* [upload.single("image")] */ product.save);
 router.delete("/id", product.delete);
 
 
