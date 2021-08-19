@@ -1,13 +1,7 @@
-* {
-    box-sizing: border-box;
-    
-}
-
 body {
     /* background-color: #ECE5BA; */
     background-color: rgb(247, 243, 233);
     font-family: 'Raleway', sans-serif;
-
 }
 
 .titulo {
@@ -21,23 +15,16 @@ body {
     padding: 30px;
     font-weight: 600;
     font-size: 20px;
-    
-    
-    
 }
 
 .seccion-carrito {
     margin: 10px;
     position: relative;
-    
-    
-    
 }
 
 .carrito-titulos {
     background-color: rgba(195, 195, 202, 0.89);
     display: none;
-    
 }
 
  

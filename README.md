@@ -28,5 +28,6 @@ Como paleta de colores usaremos los siguientes:
 #FDFDFD
 #D8D7D5
 #ADB3BC
+link: https://www.canva.com/colors/color-palettes/makeshift-slumber/
 
 FrameWork: https://www.figma.com/file/pu1uRmOlQX2jwXoHScVIPP/Untitled?node-id=1%3A30

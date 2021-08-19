@@ -1,12 +1,3 @@
-
-
-* {
-    box-sizing: border-box;
-    
-}
-
-
-
 .contenedor {
     background-color: rgb(247, 243, 233);
     display: flex;
