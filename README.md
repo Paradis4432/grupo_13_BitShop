@@ -24,8 +24,9 @@ Como referencia estética incluimos los siguientes sitios:
 - https://leenheyne.nl/home
 
 Como paleta de colores usaremos los siguientes:
-#ECE5BA
-#E54F28
-#2E1A1A
+#050606
+#FDFDFD
+#D8D7D5
+#ADB3BC
 
 FrameWork: https://www.figma.com/file/pu1uRmOlQX2jwXoHScVIPP/Untitled?node-id=1%3A30
