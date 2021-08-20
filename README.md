@@ -1,6 +1,6 @@
 # grupo_13_BitShop
 
-Crearemos una página web para la venta de PCs y perfericos.
+Crearemos una página web para la venta de PCs, perfericos y pcs armadas.
 Se ofrecerán distintas opciones para que el cliente pueda armar la PC segun sus necesidades.
 La página contará con productos diferenciados por categorías. Los cuales van a poder ser agregados a un carrito de compras.
 Cada producto contará con un título, descripción, precio y disponibilidad.
