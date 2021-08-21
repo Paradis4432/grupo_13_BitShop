@@ -20,20 +20,13 @@
     <%- include("../partials/header") %>
 
         <div class="login">
-            <div class="inputInfo">
-                <!--<label class="inputInfoText">User</label>-->
-                <input id="input" type="text" minlength="4" placeholder="Usuario" required></input>
-                <span></span>
-                <div id="dot"></div>
+            <!--<label class="inputInfoText">User</label>-->
+            <input class="input" type="text" minlength="4" placeholder="Usuario" required></input>
 
-                <div id="inputInfoPassword">
-                    <!--<label class="inputInfoText">Password</label>-->
-                    <input id="input" type="passowrd" minlength="4" placeholder="Contraseña" required></input>
-                    <span></span>
-                    <span id="dot"></span>
-                </div>
-                <button class="loginButton">Login</button>
-            </div>
+            <!--<label class="inputInfoText">Password</label>-->
+            <input class="marginTop input" type="passowrd" minlength="4" placeholder="Contraseña"
+                required></input>
+            <a href="/"><button class="loginButton">Login</button></a>
         </div>
 
         <%- include("../partials/footer") %>

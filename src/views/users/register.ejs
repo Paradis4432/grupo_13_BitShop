@@ -19,39 +19,16 @@
     <%- include("../partials/header") %>
 
         <div class="register">
-            <div class="inputInfo">
-                <!--<label class="inputInfoText">User</label>-->
-                <div id="inputInfo">
-                    <!--<label class="inputInfoText">Password</label>-->
-                    <input id="input" type="email" minlength="4" placeholder="Usuario" required></input>
-                    <span></span>
-                    <span id="dot"></span>
-                </div>
+            <!--<label class="inputInfoText">User</label>-->
+            <input class="input marginTop" type="text" minlength="4" placeholder="Usuario" required></input>
 
-                <div id="inputInfo">
-                    <!--<label class="inputInfoText">Password</label>-->
-                    <input id="input" type="email" minlength="4" placeholder="Email" required></input>
-                    <span></span>
-                    <span id="dot"></span>
-                </div>
+            <!--<label class="inputInfoText">Password</label>-->
+            <input class="input marginTop" type="email" minlength="4" placeholder="Email" required></input>
 
-
-                <div id="inputInfo">
-                    <!--<label class="inputInfoText">Password</label>-->
-                    <input id="input" type="passowrd" minlength="4" placeholder="Contraseña" required></input>
-                    <span></span>
-                    <span id="dot"></span>
-                </div>
-
-
-                <div id="inputInfo">
-                    <!--<label class="inputInfoText">Password</label>-->
-                    <input id="input" type="passowrd" minlength="4" placeholder="Confirmar Contraseña" required></input>
-                    <span></span>
-                    <span id="dot"></span>
-                </div>
-                <button class="registerButton">Register</button>
-            </div>
+            <input class="input marginTop" type="passowrd" minlength="4" placeholder="Contraseña" required></input>
+            <input class="input marginTop" type="passowrd" minlength="4" placeholder="Confirmar Contraseña"
+                required></input>
+            <a href="/"><button class="registerButton">Register</button></a>
         </div>
 
         <%- include("../partials/footer") %>
