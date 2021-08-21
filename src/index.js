@@ -11,7 +11,7 @@ app.listen(app.get("port"),() => console.log("Server Start http://localhost:" + 
 app.use(express.static(path.resolve(__dirname, "../public")));
 
 // App Settings (View Engine)
-app.set("view engine", "ejs");
+app.set('view engine','ejs');
 app.set("views", path.resolve(__dirname, "./views"));
 
 /* Data Configuration */
@@ -29,10 +29,7 @@ app.use(home);
 const product = require("./routes/product");
 app.use("/product", product);    
 
-const user = require("./routes/user");
-app.use("/user", user);
-
-
+app.use('/users', require('./routes/user'))
 
 
 
