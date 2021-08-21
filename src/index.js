@@ -29,7 +29,7 @@ app.use(home);
 const product = require("./routes/product");
 app.use("/product", product);    
 
-app.use('/users', require('./routes/user'))
+app.use('/user', require('./routes/user'))
 
 
 

@@ -19,20 +19,49 @@
     <%- include("../partials/header") %>
 
         <div class="register">
-            <input class="input marginTop" type="text" minlength="4" placeholder="Usuario" required></input>
-
-            <input class="input marginTop" type="email" minlength="4" placeholder="Email" required></input>
-
-            <input class="input marginTop" type="passowrd" minlength="4" placeholder="Contraseña" required></input>
-
-            <input class="input marginTop" type="passowrd" minlength="4" placeholder="Confirmar Contraseña"
+            <input id="userName" class="input marginTop" type="text" minlength="4" placeholder="Usuario"
                 required></input>
-                
-            <a href="/"><button class="registerButton">Register</button></a>
+
+            <input id="email" class="input marginTop" type="email" minlength="4" placeholder="Email" required></input>
+
+            <input id="password" class="input marginTop" type="passowrd" minlength="4" placeholder="Contraseña"
+                required></input>
+
+            <input id="confirmPassword" class="input marginTop" type="passowrd" minlength="4"
+                placeholder="Confirmar Contraseña" required></input>
+
+            <input class="registerButton" type="button" value="Register" onclick="checkValues();">
+
+    
+            <!--check credentials before creation-->
         </div>
 
         <%- include("../partials/footer") %>
 
+            <script>
+
+                function showAlert(message) {
+                    alert(message)
+                }
+                function createCookie(user, email, pass, conPass) {
+
+                    //userCredentials=user:email:pass:conPass;
+                    const cookie = "userCredentials" + "=" + escape(user) + ":" + escape(email) + ":" + escape(pass) + ":" + escape(conPass) + ";"
+                    document.cookie = cookie
+
+                    showAlert("new cookie created: " + cookie)
+                    window.location.href = "/"
+                }
+                function checkValues() {
+                    const [user, email, pass, conPass] = [get('userName'), get('email'), get('password'), get('confirmPassword')]
+
+                    createCookie(user, email, pass, conPass)
+                }
+                function get(id) {
+                    return document.getElementById(id).value
+                }
+
+            </script>
 </body>
 
 </html>
