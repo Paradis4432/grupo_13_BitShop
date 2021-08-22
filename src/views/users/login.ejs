@@ -20,15 +20,31 @@
     <%- include("../partials/header") %>
 
         <div class="login">
-            <input class="input" type="text" minlength="4" placeholder="Usuario" required></input>
+            <input id="user" class="input" type="text" minlength="4" placeholder="Usuario" required></input>
 
-            <input class="marginTop input" type="passowrd" minlength="4" placeholder="Contraseña"
+            <input id="pass" class="marginTop input" type="passowrd" minlength="4" placeholder="Contraseña"
                 required></input>
-                
-            <a href="/"><button class="loginButton">Login</button></a>
+
+            <input class="loginButton" type="button" value="Login" onclick="checkValues();">
         </div>
 
         <%- include("../partials/footer") %>
+
+            <script>
+                function checkValues() {
+                    //userCredentials=user:pass:email;
+                    let key = "userCredentials="
+                    let cookies = document.cookie.split('=')
+
+                    console.log(cookies[1].split(':'))
+                }
+                function showAlert(message) {
+                    alert(message)
+                }
+                function get(id) {
+                    return document.getElementById(id).value
+                }
+            </script>
 
 </body>
 

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -32,7 +33,7 @@
 
             <input class="registerButton" type="button" value="Register" onclick="checkValues();">
 
-    
+
             <!--check credentials before creation-->
         </div>
 
@@ -43,19 +44,22 @@
                 function showAlert(message) {
                     alert(message)
                 }
-                function createCookie(user, email, pass, conPass) {
+                function createCookie(user, email, pass) {
 
-                    //userCredentials=user:email:pass:conPass;
-                    const cookie = "userCredentials" + "=" + escape(user) + ":" + escape(email) + ":" + escape(pass) + ":" + escape(conPass) + ";"
+                    //userCredentials=user:pass:email;
+                    const cookie = "userCredentials" + "=" + escape(user) + ":" + escape(pass) + ":" + escape(email) + ";"
                     document.cookie = cookie
 
                     showAlert("new cookie created: " + cookie)
                     window.location.href = "/"
                 }
                 function checkValues() {
-                    const [user, email, pass, conPass] = [get('userName'), get('email'), get('password'), get('confirmPassword')]
+                    //const [user, email, pass, conPass] = [get('userName'), get('email'), get('password'), get('confirmPassword')]
 
-                    createCookie(user, email, pass, conPass)
+                    //createCookie(user, email, pass)
+                    
+                    const test = require('./data/users.json')
+                    console.log(test)
                 }
                 function get(id) {
                     return document.getElementById(id).value
