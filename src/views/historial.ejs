@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset='UTF-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<title>
+			BitShop
+		</title>
+		<link rel='stylesheet' type='text/css' href='/css/historial.css'>
+		<%- include("partials/head") %>
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+			<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+	</head>
+<body>
+    <%- include('partials/header.ejs') %>
+
+    <div class="container-user">
+        <!---->
+        <main class="main-menu-user">
+            <div class="menu-user">
+                <nav class="user-nav">
+                    <div class="user-nav-wrapper">
+                        <div class="user-nav-container">
+                            <section class="user-nav-section">
+                                <div class="user-nav-heading">
+                                    <a href="/"><i class="far fa-user"></i></a> 
+                                    <p class="user-nav-title">Mi Cuenta</p>
+                                </div>
+                            </section>
+                            <section class="user-nav-section">
+                                <div class="user-nav-heading">
+                                    <a href="/compras"><i class="fas fa-shopping-bag"></i></a>
+                                    <p class="user-nav-title">Compras</p>
+                                </div>
+                            </section>
+                            <section class="user-nav-section">
+                                <div class="user-nav-heading">
+                                    <a href="/historial"><i class="far fa-newspaper"></i></a>
+                                    <p class="user-nav-title">Historial</p>
+                                </div>
+                            </section>
+                            <section class="user-nav-section">
+                                <div class="user-nav-heading">
+                                    <a href="/favorites"><i class="far fa-heart"></i></a>
+                                    <p class="user-nav-title">Favoritos</p>
+                                </div>
+                            </section>
+                            <section class="user-nav-section">
+                                <div class="user-nav-heading">
+                                    <a href="/config"><i class="fas fa-cog"></i></a>
+                                    <p class="user-nav-title">Configuración</p>
+                                </div>
+                            </section>
+                            <!--
+                            <div class="user-nav-menu">
+                                <section class="user-nav-configuracion">
+                                    <div class="user-nav-configuracion-container">
+                                        <div class="user-nav-icon-container">
+                                            <label for="user-nav-toggle" class="user-nav-section-icon">
+                                                <i class="fas fa-cog"></i>
+                                            </label>
+                                        </div>
+                                        <label for="user-nav-section-toggle-configuracion">Configuración</label>
+                                    </div>
+                                </section>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="menu-display">
+                <div class="menu-display-content">
+                    <div class="menu-display-container">
+                        <h1>Historial</h1>
+                        <div class="menu-display-compras">
+                            <article>
+                                <div class="article-product">
+                                    <figure>
+                                        <img src="/images/PC Gamer.png" alt="">
+                                    </figure>
+                                    <div class="down">
+                                        <div class="main-down">
+                                            <div class="nombre">
+                                                <p class="nom">Millenium</p>
+                                            </div>
+                                            <div class="fecha">
+                                                <p class="fec">Fecha</p>
+                                            </div>
+                                            <div class="precio-total">
+                                                <p class="precio">Precio: $$$</p>
+                                            </div>	
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <button class="button button1" type="button">Ver la publicación</button>
+                                    <button class="button button2" type="button">Volver a comprar</button>
+                                </div>							  
+                            </article>
+                            <article>
+                                <div class="article-product">
+                                    <figure>
+                                        <img src="/images/PC Gamer.png" alt="">
+                                    </figure>
+                                    <div class="down">
+                                        <div class="main-down">
+                                            <div class="nombre">
+                                                <p class="nom">Millenium</p>
+                                            </div>
+                                            <div class="fecha">
+                                                <p class="fec">Fecha</p>
+                                            </div>
+                                            <div class="precio-total">
+                                                <p class="precio">Precio: $$$</p>
+                                            </div>	
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <button class="button button1" type="button">Ver la publicación</button>
+                                    <button class="button button2" type="button">Volver a comprar</button>
+                                </div>							  
+                            </article>
+                            <article>
+                                <div class="article-product">
+                                    <figure>
+                                        <img src="/images/PC Gamer.png" alt="">
+                                    </figure>
+                                    <div class="down">
+                                        <div class="main-down">
+                                            <div class="nombre">
+                                                <p class="nom">Millenium</p>
+                                            </div>
+                                            <div class="fecha">
+                                                <p class="fec">Fecha</p>
+                                            </div>
+                                            <div class="precio-total">
+                                                <p class="precio">Precio: $$$</p>
+                                            </div>	
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <button class="button button1" type="button">Ver la publicación</button>
+                                    <button class="button button2" type="button">Volver a comprar</button>
+                                </div>							  
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>
