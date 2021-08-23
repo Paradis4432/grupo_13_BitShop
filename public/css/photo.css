@@ -1,0 +1,274 @@
+:root{
+    --theme-color:#050606; 
+    --primary-color:#D8D7D5;
+    --secondary-color:#ADB3BC;
+    --text-color-op1:#FDFDFD;
+    --text-color-op2:#050606;
+}
+
+*{
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width:100%;
+}
+
+.main-menu-user{
+    display:flex;
+}
+
+.menu-user{
+    display:flex;
+    width:15%;
+    background-color: var(--text-color-op1);
+    font-size:13px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.menu-user i{
+    font-size:25px;
+    margin-top:30px;
+}
+
+.user-nav-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: center;
+}
+
+.user-nav-section p{
+    display:none;
+}
+
+.menu-display{
+    background: var(--secondary-color);
+    width:85%;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding:30px 0;
+}
+
+.menu-display h1{
+    text-align: center;
+    width:100px;
+    margin:0 0 13px 14px;
+    padding:5px 0;
+    font-size:18px;
+    background-color: #1d2020;
+    color:var(--text-color-op1);
+    border: 2px solid var(--theme-color);
+}
+
+.menu-display-content{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-display-compras article{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:20px;
+    background:linear-gradient(135deg, var(--primary-color) 47%, var(--primary-color), var(--text-color-op2) 47%, #1d2020 67%);
+    border-radius:20px;
+    box-shadow:0px 0px 15px rgb(19, 18, 18);
+    height:200px;
+    width:280px;
+    position:relative;
+}
+
+.menu-display figure{
+    position:relative;
+    left:30px;
+    top:40px;
+    height:100px;
+    width:80px;
+}
+
+.menu-display article div figure img{
+    height:100px;
+    width:80px;
+}
+
+.down{
+    position:relative;
+    left:30px;
+    top:40px;
+    width:200px;
+    height:80px;
+}
+
+.main-down{
+    display:flex;
+    flex-direction: column;
+    color:var(--text-color-op1);
+}
+
+.buttons{
+    display:flex;
+    margin-top:70px;
+    margin-left:22px;
+}
+
+.buttons button{
+    font-size:11px;
+    width:110px;
+    padding:0;
+}
+
+.button1{
+    margin-right:10px;
+}
+
+.main-down .nombre{
+    font-size:15px;
+    margin-top:20px;
+    margin-left:80px;
+    font-weight: bold;
+}
+
+.main-down .fecha{
+    display:none;
+}
+
+.main-down .precio{
+    font-size:13px;
+    margin-top:20px;
+    margin-left:80px;
+}
+
+.article-product{
+    display:flex;
+    justify-content: center;
+}
+
+@media (min-width:768px) {
+    .menu-display-compras article{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom:20px;
+        background:linear-gradient(135deg, var(--primary-color) 35%, var(--text-color-op2) 7%, #1d2020 67%);
+        border-radius:20px;
+        box-shadow:0px 0px 15px rgb(19, 18, 18);
+        height:180px;
+        width:580px;
+        position:relative;
+    }
+
+    .main-down .fecha{
+        display:block;
+    }
+    
+    .main-down .precio{
+        font-size:13px;
+        margin-top:20px;
+        margin-left:80px;
+    }
+    
+    .article-product{
+        display:flex;
+        justify-content: center;
+    }
+
+    .buttons{
+        display:flex;
+        flex-direction: column;
+        margin-top:-30px;
+        margin-left:450px;
+    }
+
+    .button1{
+        margin-bottom:10px; 
+    }
+
+    .menu-display figure img{
+        position:static;
+        margin-left:-150px;
+    }
+
+    .fecha p{
+        margin-top:20px;
+        margin-left:80px;
+    }
+
+    .main-down .nombre{
+        font-weight: bold;
+        font-size:15px;
+        margin-top:10px;
+        margin-left:80px;
+    }
+
+    .menu-user i{
+        font-size:25px;
+        margin-top:95px;
+    }
+}
+
+@media (min-width:1024px) {
+    .menu-display-compras article{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom:20px;
+        background:linear-gradient(135deg, var(--primary-color) 35%, var(--text-color-op2) 7%, #1d2020 67%);
+        border-radius:20px;
+        box-shadow:0px 0px 15px rgb(19, 18, 18);
+        height:180px;
+        width:780px;
+        position:relative;
+    }
+
+    .main-down .fecha{
+        display:block;
+    }
+    
+    .main-down .precio{
+        font-size:13px;
+        margin-top:20px;
+        margin-left:160px;
+    }
+    
+    .article-product{
+        display:flex;
+        justify-content: center;
+    }
+
+    .buttons{
+        display:flex;
+        flex-direction: column;
+        margin-top:-30px;
+        margin-left:630px;
+    }
+
+    .button1{
+        margin-bottom:10px; 
+    }
+
+    .menu-display figure img{
+        position:static;
+        margin-left:-220px;
+    }
+
+    .fecha p{
+        margin-top:20px;
+        margin-left:160px;
+    }
+
+    .main-down .nombre{
+        font-weight: bold;
+        font-size:15px;
+        margin-top:10px;
+        margin-left:160px;
+    }
+
+    .menu-user i{
+        font-size:35px;
+        margin-top:90px;
+    }
+}

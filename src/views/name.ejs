@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset='UTF-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<title>
+			BitShop
+		</title>
+		<link rel='stylesheet' type='text/css' href='/css/name.css'>
+		<%- include('partials/head') %>
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+			<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+	</head>
+<body>
+    <%- include('partials/header.ejs') %>
+    <div class="container-user">
+        <!---->
+        <main class="main-menu-user">
+            <div class="menu-user">
+                <nav class="user-nav">
+                    <div class="user-nav-wrapper">
+                        <div class="user-nav-container">
+                            <section class="user-nav-section">
+                                <div class="user-nav-heading">
+                                    <i class="far fa-user"></i>
+                                    <p class="user-nav-title">Mi Cuenta</p>
+                                </div>
+                            </section>
+                            <section class="user-nav-section">
+                                <div class="user-nav-heading">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <p class="user-nav-title">Compras</p>
+                                </div>
+                            </section>
+                            <section class="user-nav-section">
+                                <div class="user-nav-heading">
+                                    <i class="far fa-newspaper"></i>
+                                    <p class="user-nav-title">Historial</p>
+                                </div>
+                            </section>
+                            <section class="user-nav-section">
+                                <div class="user-nav-heading">
+                                    <i class="far fa-heart"></i>
+                                    <p class="user-nav-title">Favoritos</p>
+                                </div>
+                            </section>
+                            <section class="user-nav-section">
+                                <div class="user-nav-heading">
+                                    <i class="fas fa-cog"></i>
+                                    <p class="user-nav-title">Configuración</p>
+                                </div>
+                            </section>
+                            <!--
+                            <div class="user-nav-menu">
+                                <section class="user-nav-configuracion">
+                                    <div class="user-nav-configuracion-container">
+                                        <div class="user-nav-icon-container">
+                                            <label for="user-nav-toggle" class="user-nav-section-icon">
+                                                <i class="fas fa-cog"></i>
+                                            </label>
+                                        </div>
+                                        <label for="user-nav-section-toggle-configuracion">Configuración</label>
+                                    </div>
+                                </section>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="menu-display">
+                <div class="menu-display-content">
+                    <div class="menu-display-container">
+                        <h1>Cambiá tu nombre</h1>
+                        <form action="/config/name" method="POST" enctype="multipart/form-data">
+
+                            <div class="field">
+                                <label for="name">Nombre</label>
+                                <div class="control">
+                                    <input type="text" name="name" id="name">
+                                </div>
+                                <p class="feedback"></p>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <button tyoe="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+    </div>
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>
