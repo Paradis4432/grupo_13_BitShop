@@ -7,45 +7,52 @@
     <title><%=title%></title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/navigation.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/<%= style %>">
 </head>
 <body>
     <%- include ("../partials/header") %>
-    <form action="/product/save" method="post" id="create-form" enctype="multipart/form-data">
+
+    <form action="/product/save" method="POST" enctype="multipart/form-data">
+
+        
         <fieldset>
-            <label for="image">Image</label>
-            <input type="file" name="image" id="image">
+            <label for="name">Titulo</label>
+            <input type="text" name="name" id="name" required>
+        </fieldset>
+        
+        <fieldset>
+            <label for="description">Descripción</label>
+            <input type="text"  name="description" id="description" required>  
+        </fieldset>
+        
+        <fieldset>
+            <label for="price">Precio</label>
+            <input type="number" name="price" id="price" required>
         </fieldset>
 
         <fieldset>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name">
+            <label for="category">Categoria</label>
+            <input type="number" name="category" id="category" required>
         </fieldset>
-    <fieldset>
-        <label for="brand">Brand</label>
-        <select name="brand" id="brand">
-            <option value="" selected disabled>Choose One</option>
-            <% brands.forEach(brand => { %>
-                <option value="<%= brand.id %>">
-                    <%= brand.name %>
-                </option>
-            <% }) %>
-        </select>
-    </fieldset>
-    <fieldset>
-        <label for="colors">Colors</label>
-        <select name="colors" id="colors" multiple>
-            <% colors.forEach(color => { %>
-                <option value="<%= color.id %>" style="<%= `background-color:${color.value};`%>">
-                    <%= color.name %>
-                </option>
-            <% }) %>
-        </select>
-    </fieldset>
-    <fieldset>
-        <button type="submit">Send</button>
-    </fieldset>
-    </form> 
+
+        <!-- <fieldset>
+            <label for="brand">Marca</label>
+            <input type="text" name="brand" id="brand" required>
+        </fieldset> -->
+        
+        <fieldset>
+            <label for="image">Imagen</label>
+            <input type="file" name="image" id="image" >
+        </fieldset>
+        
+        <fieldset>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+
     <%- include ("../partials/footer") %>
+    
 </body>
 </html>

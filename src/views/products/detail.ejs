@@ -17,11 +17,15 @@
 <body>
 
     <%- include("../partials/header") %>
+
+
     <section class="contenedor">
         <article class="contenedor-producto">
-            <img src="/images\compragamer_Imganen_general_14083_Procesador_AMD_RYZEN_7_3700X_4.4_GHz_AM4_Wraith_Prism_RGB_Led_Cooler_4e00eaaf-grn.jpg" alt="" class="img-producto">
-            <h1 class="titulo-producto">Procesador AMD RYZEN 7 3700X 4.4 GHz AM4 Wraith Prism RGB Led Cooler</h1>
-            <p class="descripcion-producto">
+            <img src="/images/<%= product.image %>" alt="" class="img-producto">
+            <h1 class="titulo-producto"><%= product.name %></h1>
+            <p class="descripcion-producto"><%= product.description %></p>
+            
+            <!-- <p class="descripcion-producto">
                 CARACTERISTICAS GENERALES: <br><br>
                 Modelo: RYZEN 7 3700X<br>
                 Socket: AM4 Ryzen 3th Gen<br>
@@ -32,20 +36,19 @@
                 Hilos: 16<br>
                 Frecuencia Turbo: 4400 mhz<br>
                 Familia: AMD RYZEN 7 <br>
+            </p> -->
 
-
-            </p>
-            <p class="precio">$ 44.803</p>
+            <p class="precio"><%= product.price %></p>
             <div class="botones-producto">
                 <button class="boton">Agregar al carrito</button>
                 <button class="boton">Comprar ahora</button>
             </div>
-            <form action="/product/delete?_method=DELETE" method="POST">
+            <!-- <form action="/product/<%= product.id %>?_method=DELETE" method="POST">
                 <input type="hidden" name="id" value="<%= product.id %>">
                 <button type="submit" >
                     <i class="fas fa-trash"></i>
                 </button>
-            </form>
+            </form> -->
         </article>
         
     </section>    

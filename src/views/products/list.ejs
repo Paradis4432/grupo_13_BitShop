@@ -1,292 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title%></title>
+    <title><%= title %></title>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> --> 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/productList.css">
+    <link rel="stylesheet" href="css/<%= style %>">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
+     
 </head>
-<body>
 
+
+<body>
+    
     <%- include("../partials/header") %>
 
-    <section class="contenedor">
     
-        <article class="contenedor-producto">
-            <img src="images\compragamer_Imganen_general_14083_Procesador_AMD_RYZEN_7_3700X_4.4_GHz_AM4_Wraith_Prism_RGB_Led_Cooler_4e00eaaf-grn.jpg" alt="" class="img-producto">
-            <h1 class="titulo-producto">Procesador AMD RYZEN 7 3700X 4.4 GHz AM4 Wraith Prism RGB Led Cooler</h1>
-            <h2 class="descripcion-producto">
-                CARACTERISTICAS GENERALES: <br><br>
-                Modelo: RYZEN 7 3700X<br>
-                Socket: AM4 Ryzen 3th Gen<br>
-                Núcleos: 8<br>
-                Frecuencia: 3600.00 mhz<br>
-                Proceso De Fabricación: 7 nm<br>
-                Chipset Gpu: NO Posee Gráficos Integrados<br>
-                Hilos: 16<br>
-                Frecuencia Turbo: 4400 mhz<br>
-                Familia: AMD RYZEN 7 <br>
-
-
-            </h2>
-            <div class="botones-producto">
-            <button class="boton">Agregar al carrito</button>
-            <!-- <button class="boton">Comprar ahora</button> -->
-            </div>
-        </article>
-
-        <article class="contenedor-producto">
-            <img src="/images\intel-core-i7.jpg" alt="" class="img-producto">
-            <h1 class="titulo-producto">Procesador Intel Core i7 9700F 4.7GHz Turbo 1151 Coffee Lake</h1>
-            <h2 class="descripcion-producto">
-                CARACTERISTICAS GENERALES: <br><br>
-                Modelo: Core i7 9700F<br>
-                Socket: 1151 Coffe Lake<br>
-                Núcleos: 8<br>
-                Frecuencia: 3600.00 mhz<br>
-                Proceso De Fabricación: 14 nm<br>
-                Chipset Gpu: NO Posee Gráficos Integrados<br>
-                Hilos: 8<br>
-                Frecuencia Turbo: 4700 mhz<br>
-                Familia: Intel Core i7 <br>
-            </h2>
-            <div class="botones-producto">
-            <button class="boton">Agregar al carrito</button>
-            <!-- <button class="boton">Comprar ahora</button> -->
-            </div>
-        </article>
-
-        <article class="contenedor-producto">
-            <img src="/images\Intel_Core_i7_Turbo.jpg" alt="" class="img-producto">
-            <h1 class="titulo-producto">Procesador Intel Core i7 10700KA 5.1GHz Turbo 1200 Comet Lake Avengers Edition</h1>
-            <h2 class="descripcion-producto">
-                CARACTERISTICAS GENERALES: <br><br>
-                Modelo: 10700KA<br>
-                Socket: 1200 Comet Lake<br>
-                Núcleos: 8<br>
-                Frecuencia: 3800.00 mhz<br>
-                Proceso De Fabricación: 14 nm<br>
-                Chipset Gpu: Intel UHD Graphics 630<br>
-                Hilos: 16<br>
-                Frecuencia Turbo: 5100 mhz<br>
-                Familia: Intel Core i7 <br>
-            </h2>
-            <div class="botones-producto">
-            <button class="boton">Agregar al carrito</button>
-            <!-- <button class="boton">Comprar ahora</button> -->
-            </div>
-        </article>
-
-        <article class="contenedor-producto">
-            <img src="images\compragamer_Imganen_general_14083_Procesador_AMD_RYZEN_7_3700X_4.4_GHz_AM4_Wraith_Prism_RGB_Led_Cooler_4e00eaaf-grn.jpg" alt="" class="img-producto">
-            <h1 class="titulo-producto">Procesador AMD RYZEN 7 3700X 4.4 GHz AM4 Wraith Prism RGB Led Cooler</h1>
-            <h2 class="descripcion-producto">
-                CARACTERISTICAS GENERALES: <br><br>
-                Modelo: RYZEN 7 3700X<br>
-                Socket: AM4 Ryzen 3th Gen<br>
-                Núcleos: 8<br>
-                Frecuencia: 3600.00 mhz<br>
-                Proceso De Fabricación: 7 nm<br>
-                Chipset Gpu: NO Posee Gráficos Integrados<br>
-                Hilos: 16<br>
-                Frecuencia Turbo: 4400 mhz<br>
-                Familia: AMD RYZEN 7 <br>
-
-
-            </h2>
-            <div class="botones-producto">
-            <button class="boton">Agregar al carrito</button>
-            <!-- <button class="boton">Comprar ahora</button> -->
-            </div>
-        </article>
-
-        <article class="contenedor-producto">
-            <img src="/images\intel-core-i7.jpg" alt="" class="img-producto">
-            <h1 class="titulo-producto">Procesador Intel Core i7 9700F 4.7GHz Turbo 1151 Coffee Lake</h1>
-            <h2 class="descripcion-producto">
-                CARACTERISTICAS GENERALES: <br><br>
-                Modelo: Core i7 9700F<br>
-                Socket: 1151 Coffe Lake<br>
-                Núcleos: 8<br>
-                Frecuencia: 3600.00 mhz<br>
-                Proceso De Fabricación: 14 nm<br>
-                Chipset Gpu: NO Posee Gráficos Integrados<br>
-                Hilos: 8<br>
-                Frecuencia Turbo: 4700 mhz<br>
-                Familia: Intel Core i7 <br>
-            </h2>
-            <div class="botones-producto">
-            <button class="boton">Agregar al carrito</button>
-            <!-- <button class="boton">Comprar ahora</button> -->
-            </div>
-        </article>
-
-        <article class="contenedor-producto">
-            <img src="/images\Intel_Core_i7_Turbo.jpg" alt="" class="img-producto">
-            <h1 class="titulo-producto">Procesador Intel Core i7 10700KA 5.1GHz Turbo 1200 Comet Lake Avengers Edition</h1>
-            <h2 class="descripcion-producto">
-                CARACTERISTICAS GENERALES: <br><br>
-                Modelo: 10700KA<br>
-                Socket: 1200 Comet Lake<br>
-                Núcleos: 8<br>
-                Frecuencia: 3800.00 mhz<br>
-                Proceso De Fabricación: 14 nm<br>
-                Chipset Gpu: Intel UHD Graphics 630<br>
-                Hilos: 16<br>
-                Frecuencia Turbo: 5100 mhz<br>
-                Familia: Intel Core i7 <br>
-            </h2>
-            <div class="botones-producto">
-            <button class="boton">Agregar al carrito</button>
-            <!-- <button class="boton">Comprar ahora</button> -->
-            </div>
-        </article>
-
-        <article class="contenedor-producto">
-            <img src="images\compragamer_Imganen_general_14083_Procesador_AMD_RYZEN_7_3700X_4.4_GHz_AM4_Wraith_Prism_RGB_Led_Cooler_4e00eaaf-grn.jpg" alt="" class="img-producto">
-            <h1 class="titulo-producto">Procesador AMD RYZEN 7 3700X 4.4 GHz AM4 Wraith Prism RGB Led Cooler</h1>
-            <h2 class="descripcion-producto">
-                CARACTERISTICAS GENERALES: <br><br>
-                Modelo: RYZEN 7 3700X<br>
-                Socket: AM4 Ryzen 3th Gen<br>
-                Núcleos: 8<br>
-                Frecuencia: 3600.00 mhz<br>
-                Proceso De Fabricación: 7 nm<br>
-                Chipset Gpu: NO Posee Gráficos Integrados<br>
-                Hilos: 16<br>
-                Frecuencia Turbo: 4400 mhz<br>
-                Familia: AMD RYZEN 7 <br>
-
-
-            </h2>
-            <div class="botones-producto">
-            <button class="boton">Agregar al carrito</button>
-            <!-- <button class="boton">Comprar ahora</button> -->
-            </div>
-        </article>
-
-        <article class="contenedor-producto">
-            <img src="/images\intel-core-i7.jpg" alt="" class="img-producto">
-            <h1 class="titulo-producto">Procesador Intel Core i7 9700F 4.7GHz Turbo 1151 Coffee Lake</h1>
-            <h2 class="descripcion-producto">
-                CARACTERISTICAS GENERALES: <br><br>
-                Modelo: Core i7 9700F<br>
-                Socket: 1151 Coffe Lake<br>
-                Núcleos: 8<br>
-                Frecuencia: 3600.00 mhz<br>
-                Proceso De Fabricación: 14 nm<br>
-                Chipset Gpu: NO Posee Gráficos Integrados<br>
-                Hilos: 8<br>
-                Frecuencia Turbo: 4700 mhz<br>
-                Familia: Intel Core i7 <br>
-            </h2>
-            <div class="botones-producto">
-            <button class="boton">Agregar al carrito</button>
-            <!-- <button class="boton">Comprar ahora</button> -->
-            </div>
-        </article>
-
-        <article class="contenedor-producto">
-            <img src="/images\Intel_Core_i7_Turbo.jpg" alt="" class="img-producto">
-            <h1 class="titulo-producto">Procesador Intel Core i7 10700KA 5.1GHz Turbo 1200 Comet Lake Avengers Edition</h1>
-            <h2 class="descripcion-producto">
-                CARACTERISTICAS GENERALES: <br><br>
-                Modelo: 10700KA<br>
-                Socket: 1200 Comet Lake<br>
-                Núcleos: 8<br>
-                Frecuencia: 3800.00 mhz<br>
-                Proceso De Fabricación: 14 nm<br>
-                Chipset Gpu: Intel UHD Graphics 630<br>
-                Hilos: 16<br>
-                Frecuencia Turbo: 5100 mhz<br>
-                Familia: Intel Core i7 <br>
-            </h2>
-            <div class="botones-producto">
-            <button class="boton">Agregar al carrito</button>
-            <!-- <button class="boton">Comprar ahora</button> -->
-            </div>
-        </article>
-
-        <article class="contenedor-producto">
-            <img src="images\compragamer_Imganen_general_14083_Procesador_AMD_RYZEN_7_3700X_4.4_GHz_AM4_Wraith_Prism_RGB_Led_Cooler_4e00eaaf-grn.jpg" alt="" class="img-producto">
-            <h1 class="titulo-producto">Procesador AMD RYZEN 7 3700X 4.4 GHz AM4 Wraith Prism RGB Led Cooler</h1>
-            <h2 class="descripcion-producto">
-                CARACTERISTICAS GENERALES: <br><br>
-                Modelo: RYZEN 7 3700X<br>
-                Socket: AM4 Ryzen 3th Gen<br>
-                Núcleos: 8<br>
-                Frecuencia: 3600.00 mhz<br>
-                Proceso De Fabricación: 7 nm<br>
-                Chipset Gpu: NO Posee Gráficos Integrados<br>
-                Hilos: 16<br>
-                Frecuencia Turbo: 4400 mhz<br>
-                Familia: AMD RYZEN 7 <br>
-
-
-            </h2>
-            <div class="botones-producto">
-            <button class="boton">Agregar al carrito</button>
-            <!-- <button class="boton">Comprar ahora</button> -->
-            </div>
-        </article>
-
-        <article class="contenedor-producto">
-            <img src="/images\intel-core-i7.jpg" alt="" class="img-producto">
-            <h1 class="titulo-producto">Procesador Intel Core i7 9700F 4.7GHz Turbo 1151 Coffee Lake</h1>
-            <h2 class="descripcion-producto">
-                CARACTERISTICAS GENERALES: <br><br>
-                Modelo: Core i7 9700F<br>
-                Socket: 1151 Coffe Lake<br>
-                Núcleos: 8<br>
-                Frecuencia: 3600.00 mhz<br>
-                Proceso De Fabricación: 14 nm<br>
-                Chipset Gpu: NO Posee Gráficos Integrados<br>
-                Hilos: 8<br>
-                Frecuencia Turbo: 4700 mhz<br>
-                Familia: Intel Core i7 <br>
-            </h2>
-            <div class="botones-producto">
-            <button class="boton">Agregar al carrito</button>
-            <!-- <button class="boton">Comprar ahora</button> -->
-            </div>
-        </article>
-
-        <article class="contenedor-producto">
-            <img src="/images\Intel_Core_i7_Turbo.jpg" alt="" class="img-producto">
-            <h1 class="titulo-producto">Procesador Intel Core i7 10700KA 5.1GHz Turbo 1200 Comet Lake Avengers Edition</h1>
-            <h2 class="descripcion-producto">
-                CARACTERISTICAS GENERALES: <br><br>
-                Modelo: 10700KA<br>
-                Socket: 1200 Comet Lake<br>
-                Núcleos: 8<br>
-                Frecuencia: 3800.00 mhz<br>
-                Proceso De Fabricación: 14 nm<br>
-                Chipset Gpu: Intel UHD Graphics 630<br>
-                Hilos: 16<br>
-                Frecuencia Turbo: 5100 mhz<br>
-                Familia: Intel Core i7 <br>
-            </h2>
-            <div class="botones-producto">
-            <button class="boton">Agregar al carrito</button>
-            <!-- <button class="boton">Comprar ahora</button> -->
-            </div>
-        </article>
-
+    <section class="section-main">
         
 
-        
-        <%- include("../partials/footer") %>
+            <% product.forEach(product => { %>
+            <article>
+                <!-- <% if (product.image) { %>
+                    <figure><img src="/uploads/products/<%= product.image%>" alt=""></figure>
+                <% } else { %>
+                    <figure><img src="/images/default.jpg" alt=""></figure>
+                <% } %> -->
+                <img src="/uploads/products/<%= product.image %>" alt="imagen del producto">
 
-    </section>        
-     
+                <div class="article-div">
+                
+                    <div class="titulo"><%= product.name %></div>
+                    <div class="precio">$ <%= product.price %></div>
+                    
+                    <div class="descripcion">
+                        <%= product.description %>
+                    </div>
+                    <form class="boton" action="" method="">
+                        <button type="submit">Agregar al carrito</button>
+                    </form>
+                </div>    
+
+                <!-- <section>
+                    <h2><%= product.name %></h2>
+                    <a href="/product/<%= product.id %>">show more</a>
+                </section> -->
+            </article>
+            <% }) %>
+
+    </section>
+    
+
+
+    <%- include("../partials/footer") %>
     
 </body>
 </html>

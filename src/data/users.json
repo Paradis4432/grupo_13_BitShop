@@ -6,7 +6,8 @@
     "password": "PUMzuiRko",
     "category": "user",
     "image": "user_1.jpg"
-  }, {
+  }, 
+  {
     "id": 2,
     "first_name": "Ilysa",
     "last_name": "Maxfield",
@@ -14,7 +15,8 @@
     "password": "NWqSdBej6D",
     "category": "user",
     "image": "user_2.jpg"
-  }, {
+  }, 
+  {
     "id": 3,
     "first_name": "Rosamund",
     "last_name": "Downe",
@@ -22,7 +24,8 @@
     "password": "ayf2ppjqDRX4",
     "category": "user",
     "image": "user_3.jpg"
-  }, {
+  }, 
+  {
     "id": 4,
     "first_name": "Ernst",
     "last_name": "Housam",
