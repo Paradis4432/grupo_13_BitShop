@@ -38,34 +38,6 @@
         </div>
 
         <%- include("../partials/footer") %>
-
-            <script>
-
-                function showAlert(message) {
-                    alert(message)
-                }
-                function createCookie(user, email, pass) {
-
-                    //userCredentials=user:pass:email;
-                    const cookie = "userCredentials" + "=" + escape(user) + ":" + escape(pass) + ":" + escape(email) + ";"
-                    document.cookie = cookie
-
-                    showAlert("new cookie created: " + cookie)
-                    window.location.href = "/"
-                }
-                function checkValues() {
-                    //const [user, email, pass, conPass] = [get('userName'), get('email'), get('password'), get('confirmPassword')]
-
-                    //createCookie(user, email, pass)
-                    
-                    const test = require('./data/users.json')
-                    console.log(test)
-                }
-                function get(id) {
-                    return document.getElementById(id).value
-                }
-
-            </script>
 </body>
 
 </html>
